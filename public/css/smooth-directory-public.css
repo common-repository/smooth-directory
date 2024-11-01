@@ -1,0 +1,86 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.smooth-directory {
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+}
+
+.smooth-directory__item {
+ 	float: left;
+ 	width: 100%;
+  margin: 20px 0 0;
+}
+
+@media all and (min-width: 670px) {
+  .smooth-directory__item {
+    width: 50%;
+  }
+}
+
+.smooth-directory__item img {
+  float: right;
+}
+
+.smooth-directory__item:nth-child(2n+1) {
+  clear: left;
+}
+
+.smooth-directory__interior {
+  width: 90%;
+}
+
+.smooth-pagination {
+  float: right;
+}
+
+.smooth-pagination .page-numbers {
+  padding: 0 2px;
+}
+
+.smooth-filter-row {
+  float: left;
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0 0;
+  background: #ccc;
+}
+
+@media all and (min-width: 670px) {
+  .smooth-filter-row strong {
+    display: inline;
+  }
+}
+
+.smooth-filter-row a {
+  text-decoration: none;
+  color: #000;
+}
+
+.smooth-filter-row a:hover {
+  color: #fff;
+}
+
+.smooth-filter-row__cat strong {
+  display: block;
+}
+
+@media all and (min-width: 600px) {
+  .smooth-filter-row__cat strong {
+    display: inline;
+    margin: 0 6px 0 0;
+  }
+}
+
+@media all and (min-width: 1150px) {
+  .smooth-filter-row__letters {
+    float: left;
+  }
+
+  .smooth-filter-row__cat {
+    float: right;
+  }
+}
